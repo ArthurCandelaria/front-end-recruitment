@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>front-end-recruitment</title>
+        <link rel="shortcut icon" href="/resources/images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./resources/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./resources/css/sacola.css">
+    </head>
+
+    <body>
+
+        <section class="sacola">
+
+            <input type="checkbox" id="chk">
+
+            <label for="chk" class="menu-icon">
+                <img class="sacola-negativa" src="./resources/images/sacola-negativa.png">
+                <div class="qtde-produtos-negativo carrinho">0</div>
+            </label>
+
+            <nav class="menu" id="principal">
+
+                <label for="chk" id="fechar">
+                    <img class="sacola-negativa" src="./resources/images/fechar.png">
+                </label>
+
+                <h2>
+                    <img class="sacola" src="./resources/images/sacola.png">Sacola
+                    <div class="qtde-produtos carrinho">0</div>
+                </h2>
+
+                <ul class="itens-sacola">
+                                                                             
+                </ul>
+
+                <div>
+                    <div class="subtotal">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="valor-pagamento">
+                        <p class="valor-total"><span id="price-total">0,00</span></p>
+                        <p class="valor-tatol-parcela">ou em até <span id="qtde-total-parcela">0</span> x <span id="valor-total-parcela">0,00</span></p>
+                    </div>
+                </div>
+
+                
+                <div id="botao">
+                    <form>
+                       <input id="comprar" type="submit" name="comprar" value="Comprar" class="botaoEnviar" />
+                    </form>
+                </div>                
+
+            </nav>
+
+        </section>
+
+        <section class="produtos">
+            <div class="container">
+
+                <ul class="lista-produtos">
+                    
+                </ul>
+
+            </div>
+        </section>
+
+    </body>
+
+    <script type="text/javascript" src="./resources/js/bag.js"></script>        
+    <script type="text/javascript" src="./resources/js/main.js"></script>
+
+</html>

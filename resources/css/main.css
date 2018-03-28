@@ -1,0 +1,60 @@
+produtos {
+    width: 100%;
+}
+
+.container {
+
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.lista-produtos li{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin: 70px 7% 0 7%;
+    width: 200px;
+}
+
+.titulo {
+    font-size: 12px;
+    line-height: 14px;
+    height: 30px;
+    color: #313135;
+    font-weight: bold;
+    margin-top: 7px;
+}    
+
+hr{
+    border: 1px solid #dfbd00;
+    color: #dfbd00;
+    background-color: #dfbd00;
+    width: 12px;
+}
+
+.preco-produto {
+    font-size: 12px;
+    color: #313135;
+    font-weight: bold;    
+    margin: 5px;
+}
+
+.valor {
+    font-size: 20px;
+    color: #313135;
+    font-weight: bold;    
+    margin: 10px 1px 0 2px;
+}
+
+.preco-parcela{
+    font-size: 13px;
+    color: #999999;
+    font-weight: bold;     
+}

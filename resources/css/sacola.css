@@ -1,0 +1,197 @@
+.sacola{
+    float: right;
+}
+
+.menu-icon{
+    position: fixed;
+    cursor: pointer;
+    right: 25px;
+}
+
+.menu{
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 45px 0;
+    position: fixed;
+    background: #202025;
+    overflow: auto;
+    transition: all .2s;
+}
+
+#principal{
+    width: 500px;
+    right: -520px;
+}
+
+#chk{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#chk:checked ~ #principal {
+    transform: translateX(-520px);
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 25px;
+}
+
+h2 img {
+    margin: -13px -60px;
+    position: absolute;
+}
+
+#botao { 
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#comprar {
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    width: 90%;
+    height: 50px;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sacola-negativa{
+    margin: -40px;
+}
+
+.qtde-produtos-negativo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;    
+    position: absolute;
+    background: #dfbd00;
+    color: #000;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 35px;
+    right: -5px;
+}
+
+.qtde-produtos{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    background: #dfbd00;
+    color: #000;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 54px;
+    right: 310px;
+}
+
+#fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -20px 0px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.itens-sacola{
+    padding: 30px 0 0 0;
+}
+
+.itens-sacola li .container-produto{
+    border-top: 2px solid #131316;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 30px;
+}
+
+.titulo-sacola {
+    font-weight: bold;
+}
+
+.preco-sacola {
+    float: right;
+    margin-top: -18px;
+    font-weight: bold;
+    color: #dfbd00;
+}
+
+.fechar-negativo {
+    float: right;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.grifa-produto {
+    text-decoration: line-through;
+}
+
+.itens-sacola li:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.subtotal {
+    text-transform: uppercase;
+    height: 54px;
+    margin-top: 10px;
+    border-top: 2px solid #131316;
+    padding: 20px 0;
+    margin: 0 30px;
+    line-height: 18px;
+}
+
+
+.subtotal p {
+    color: #79797c;
+    margin-top: 15px;
+}
+
+.valor-pagamento {
+    float: right;
+    text-align: right;
+    margin: -70px 30px 0 0;
+    line-height: 25px;
+}
+
+.valor-pagamento .valor-total {
+    font-size: 20px;
+    color: #dfbd00;
+    font-weight: bold;
+}
+
+.valor-pagamento .valor-tatol-parcela {
+    color: #79797c;
+}
+
+.produto-wrapper {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative; /* Para fazer que a imagem com position-absolute respeite a sua posição consoante este selector, ou evitar que saia do mesmo */
+    float: left;
+    margin-right: 25px;
+}
+.img-produto-sacola {
+    width: 50px;
+    /* código abaixo centra a imagem ao centro */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
